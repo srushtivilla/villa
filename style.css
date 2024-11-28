@@ -1557,3 +1557,46 @@ img {
 /* ====== The End ====== */
 
 /*# sourceMappingURL=style.css.map */
+
+ /* _______________________________First code ________________________________________ */
+ .single-gallery-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.single-gallery-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.single-gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.single-gallery-item:hover .gallery-hover-overlay {
+  opacity: 1;
+}
+
+.gallery-hover-overlay h6 {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* _______________________________________________________________________ */
